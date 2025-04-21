@@ -3,7 +3,9 @@
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <title>Jobeet - Your best job board </title>
+  <title>
+    <?php include_slot('title', 'Jobeet - Your best job board') ?>
+  </title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_javascripts() ?>
     <?php include_stylesheets() ?>
@@ -12,9 +14,15 @@
     <div id="container">
       <div id="header">
         <div class="content">
+        <!-- <h1>
+          <a href="<?php echo url_for('homepage') ?>">
+            <img src="/images/logo.jpg" alt="Jobeet Job Board" />
+          </a>
+        </h1> -->
           <h1><a href="<?php echo url_for('job/index') ?>">
-            <img src="/jobeet/web/images/logo.png" height="100" width="100" alt="Jobeet Job Board" />
-          </a></h1>
+            <img src="/legacy/images/logo.jpg" alt="Jobeet Job Board" />
+          </a>
+        </h1>
  
           <div id="sub_header">
             <div class="post">
@@ -60,9 +68,9 @@
       <div id="footer">
         <div class="content">
           <span class="symfony">
-            <img height="50" width="50" src="/jobeet/web/images/symfony.png" />
+            <img src="/jobeet/web/legacy/images/jobeet-mini.png" />
             powered by <a href="/">
-            <img src="/jobeet/web/images/symfony.png" height="50" width="50" alt="symfony framework" />
+            <img src="/legacy/images/symfony.gif" alt="symfony framework" />
             </a>
           </span>
           <ul>

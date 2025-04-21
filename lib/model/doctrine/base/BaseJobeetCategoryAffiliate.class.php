@@ -10,12 +10,12 @@
  * @property JobeetCategory $JobeetCategory
  * @property JobeetAffiliate $JobeetAffiliate
  * 
- * @method integer                 getCategoryId()      Returns the current record's "category_id" value
- * @method integer                 getAffiliateId()     Returns the current record's "affiliate_id" value
+ * @method integer                 getcategory_id()     Returns the current record's "category_id" value
+ * @method integer                 getaffiliate_id()    Returns the current record's "affiliate_id" value
  * @method JobeetCategory          getJobeetCategory()  Returns the current record's "JobeetCategory" value
  * @method JobeetAffiliate         getJobeetAffiliate() Returns the current record's "JobeetAffiliate" value
- * @method JobeetCategoryAffiliate setCategoryId()      Sets the current record's "category_id" value
- * @method JobeetCategoryAffiliate setAffiliateId()     Sets the current record's "affiliate_id" value
+ * @method JobeetCategoryAffiliate setcategory_id()     Sets the current record's "category_id" value
+ * @method JobeetCategoryAffiliate setaffiliate_id()    Sets the current record's "affiliate_id" value
  * @method JobeetCategoryAffiliate setJobeetCategory()  Sets the current record's "JobeetCategory" value
  * @method JobeetCategoryAffiliate setJobeetAffiliate() Sets the current record's "JobeetAffiliate" value
  * 

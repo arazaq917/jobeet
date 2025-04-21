@@ -1,3 +1,4 @@
+# apps/frontend/config/view.yml
 default:
   http_metas:
     content-type: text/html

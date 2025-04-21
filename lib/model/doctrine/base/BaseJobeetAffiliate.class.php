@@ -12,16 +12,16 @@
  * @property Doctrine_Collection $JobeetCategories
  * @property Doctrine_Collection $JobeetCategoryAffiliate
  * 
- * @method string              getUrl()                     Returns the current record's "url" value
- * @method string              getEmail()                   Returns the current record's "email" value
- * @method string              getToken()                   Returns the current record's "token" value
- * @method boolean             getIsActive()                Returns the current record's "is_active" value
+ * @method string              geturl()                     Returns the current record's "url" value
+ * @method string              getemail()                   Returns the current record's "email" value
+ * @method string              gettoken()                   Returns the current record's "token" value
+ * @method boolean             getis_active()               Returns the current record's "is_active" value
  * @method Doctrine_Collection getJobeetCategories()        Returns the current record's "JobeetCategories" collection
  * @method Doctrine_Collection getJobeetCategoryAffiliate() Returns the current record's "JobeetCategoryAffiliate" collection
- * @method JobeetAffiliate     setUrl()                     Sets the current record's "url" value
- * @method JobeetAffiliate     setEmail()                   Sets the current record's "email" value
- * @method JobeetAffiliate     setToken()                   Sets the current record's "token" value
- * @method JobeetAffiliate     setIsActive()                Sets the current record's "is_active" value
+ * @method JobeetAffiliate     seturl()                     Sets the current record's "url" value
+ * @method JobeetAffiliate     setemail()                   Sets the current record's "email" value
+ * @method JobeetAffiliate     settoken()                   Sets the current record's "token" value
+ * @method JobeetAffiliate     setis_active()               Sets the current record's "is_active" value
  * @method JobeetAffiliate     setJobeetCategories()        Sets the current record's "JobeetCategories" collection
  * @method JobeetAffiliate     setJobeetCategoryAffiliate() Sets the current record's "JobeetCategoryAffiliate" collection
  * 

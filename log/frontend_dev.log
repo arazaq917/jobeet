@@ -799,3 +799,562 @@ Apr 21 09:30:28 symfony [info] {sfWebDebugLogger} Action "job/show" 65.77 ms (1)
 Apr 21 09:30:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.13 ms (2)
 Apr 21 09:30:28 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 26.47 ms (1)
 Apr 21 09:30:28 symfony [info] {sfWebResponse} Send content (37505 o)
+Apr 21 09:54:33 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 09:54:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 09:54:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 09:54:33 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 09:54:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 09:54:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 09:54:33 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 09:54:33 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 09:54:33 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 09:54:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 09:54:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 09:54:33 symfony [info] {sfWebDebugLogger} Configuration 19.89 ms (9)
+Apr 21 09:54:33 symfony [info] {sfWebDebugLogger} Factories 47.48 ms (1)
+Apr 21 09:54:33 symfony [info] {sfWebDebugLogger} Action "job/show" 62.37 ms (1)
+Apr 21 09:54:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.24 ms (2)
+Apr 21 09:54:33 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 31.25 ms (1)
+Apr 21 09:54:33 symfony [info] {sfWebResponse} Send content (38270 o)
+Apr 21 09:54:39 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Apr 21 09:54:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 09:54:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 09:54:39 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 21 09:54:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 09:54:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j - ()
+Apr 21 09:54:39 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 21 09:54:39 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 09:54:39 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 09:54:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 09:54:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 09:54:39 symfony [info] {sfWebDebugLogger} Configuration 18.40 ms (9)
+Apr 21 09:54:39 symfony [info] {sfWebDebugLogger} Factories 54.63 ms (1)
+Apr 21 09:54:39 symfony [info] {sfWebDebugLogger} Action "job/index" 52.96 ms (1)
+Apr 21 09:54:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.63 ms (2)
+Apr 21 09:54:39 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 36.16 ms (1)
+Apr 21 09:54:39 symfony [info] {sfWebResponse} Send content (38510 o)
+Apr 21 10:00:10 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 10:00:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 10:00:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 10:00:10 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 10:00:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 10:00:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 10:00:10 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 10:00:10 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 10:00:10 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 10:00:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 10:00:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 10:00:10 symfony [info] {sfWebDebugLogger} Configuration 21.26 ms (9)
+Apr 21 10:00:10 symfony [info] {sfWebDebugLogger} Factories 50.98 ms (1)
+Apr 21 10:00:10 symfony [info] {sfWebDebugLogger} Action "job/show" 74.09 ms (1)
+Apr 21 10:00:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.50 ms (2)
+Apr 21 10:00:10 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 34.02 ms (1)
+Apr 21 10:00:10 symfony [info] {sfWebResponse} Send content (38293 o)
+Apr 21 10:00:14 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Apr 21 10:00:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 10:00:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 10:00:14 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 21 10:00:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 10:00:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j - ()
+Apr 21 10:00:14 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 21 10:00:14 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 10:00:14 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 10:00:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 10:00:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 10:00:14 symfony [info] {sfWebDebugLogger} Configuration 23.56 ms (9)
+Apr 21 10:00:14 symfony [info] {sfWebDebugLogger} Factories 71.48 ms (1)
+Apr 21 10:00:14 symfony [info] {sfWebDebugLogger} Action "job/index" 56.94 ms (1)
+Apr 21 10:00:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.84 ms (2)
+Apr 21 10:00:14 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 36.50 ms (1)
+Apr 21 10:00:14 symfony [info] {sfWebResponse} Send content (38533 o)
+Apr 21 11:45:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 11:45:42 symfony [info] {myUser} Automatic user logout due to timeout
+Apr 21 11:45:42 symfony [info] {myUser} User is not authenticated
+Apr 21 11:45:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 11:45:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 11:45:42 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 11:45:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 11:45:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 11:45:42 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 11:45:42 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 11:45:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 11:45:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 11:45:42 symfony [info] {sfWebDebugLogger} Configuration 13.20 ms (10)
+Apr 21 11:45:42 symfony [info] {sfWebDebugLogger} Factories 15.64 ms (1)
+Apr 21 11:45:42 symfony [info] {sfWebDebugLogger} Action "job/show" 26.81 ms (1)
+Apr 21 11:45:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.66 ms (2)
+Apr 21 11:45:42 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 41.27 ms (1)
+Apr 21 11:47:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 11:47:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 11:47:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 11:47:25 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 11:47:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 11:47:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 11:47:25 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 11:47:25 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 11:47:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 11:47:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 11:47:25 symfony [info] {sfWebDebugLogger} Configuration 5.48 ms (9)
+Apr 21 11:47:25 symfony [info] {sfWebDebugLogger} Factories 16.24 ms (1)
+Apr 21 11:47:25 symfony [info] {sfWebDebugLogger} Action "job/show" 21.81 ms (1)
+Apr 21 11:47:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.61 ms (2)
+Apr 21 11:47:25 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 34.99 ms (1)
+Apr 21 11:49:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 11:49:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 11:49:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 11:49:52 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 11:49:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 11:49:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 11:49:52 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 11:49:52 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 11:49:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 11:49:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 11:49:52 symfony [info] {sfWebDebugLogger} Configuration 5.21 ms (9)
+Apr 21 11:49:52 symfony [info] {sfWebDebugLogger} Factories 15.50 ms (1)
+Apr 21 11:49:52 symfony [info] {sfWebDebugLogger} Action "job/show" 17.68 ms (1)
+Apr 21 11:49:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.49 ms (2)
+Apr 21 11:49:52 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 35.42 ms (1)
+Apr 21 11:50:12 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Apr 21 11:50:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 11:50:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 11:50:12 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 21 11:50:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 11:50:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j - ()
+Apr 21 11:50:12 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 21 11:50:12 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 11:50:12 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 11:50:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 11:50:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 11:50:12 symfony [info] {sfWebDebugLogger} Configuration 5.38 ms (9)
+Apr 21 11:50:12 symfony [info] {sfWebDebugLogger} Factories 15.02 ms (1)
+Apr 21 11:50:12 symfony [info] {sfWebDebugLogger} Action "job/index" 15.15 ms (1)
+Apr 21 11:50:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.46 ms (2)
+Apr 21 11:50:12 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 8.76 ms (1)
+Apr 21 11:50:12 symfony [info] {sfWebResponse} Send content (36792 o)
+Apr 21 11:51:31 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Apr 21 11:51:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 11:51:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 11:51:31 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 21 11:51:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 11:51:31 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j - ()
+Apr 21 11:51:31 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 21 11:51:31 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 11:51:31 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 11:51:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 11:51:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 11:51:31 symfony [info] {sfWebDebugLogger} Configuration 5.49 ms (9)
+Apr 21 11:51:31 symfony [info] {sfWebDebugLogger} Factories 14.61 ms (1)
+Apr 21 11:51:31 symfony [info] {sfWebDebugLogger} Action "job/index" 15.11 ms (1)
+Apr 21 11:51:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.40 ms (2)
+Apr 21 11:51:31 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 8.82 ms (1)
+Apr 21 11:51:31 symfony [info] {sfWebResponse} Send content (36848 o)
+Apr 21 11:51:48 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Apr 21 11:51:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 11:51:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 11:51:48 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 21 11:51:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 11:51:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j - ()
+Apr 21 11:51:48 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 21 11:51:48 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 11:51:48 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 11:51:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 11:51:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 11:51:48 symfony [info] {sfWebDebugLogger} Configuration 5.72 ms (9)
+Apr 21 11:51:48 symfony [info] {sfWebDebugLogger} Factories 15.10 ms (1)
+Apr 21 11:51:48 symfony [info] {sfWebDebugLogger} Action "job/index" 15.17 ms (1)
+Apr 21 11:51:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.31 ms (2)
+Apr 21 11:51:48 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 8.78 ms (1)
+Apr 21 11:51:48 symfony [info] {sfWebResponse} Send content (36825 o)
+Apr 21 11:52:02 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Apr 21 11:52:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 11:52:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 11:52:02 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 21 11:52:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 11:52:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j - ()
+Apr 21 11:52:02 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 21 11:52:02 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 11:52:02 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 11:52:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 11:52:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 11:52:02 symfony [info] {sfWebDebugLogger} Configuration 5.70 ms (9)
+Apr 21 11:52:02 symfony [info] {sfWebDebugLogger} Factories 14.28 ms (1)
+Apr 21 11:52:02 symfony [info] {sfWebDebugLogger} Action "job/index" 14.58 ms (1)
+Apr 21 11:52:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.43 ms (2)
+Apr 21 11:52:02 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 8.42 ms (1)
+Apr 21 11:52:02 symfony [info] {sfWebResponse} Send content (36892 o)
+Apr 21 11:57:33 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Apr 21 11:57:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 11:57:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 11:57:33 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 21 11:57:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 11:57:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j - ()
+Apr 21 11:57:33 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 21 11:57:33 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 11:57:33 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 11:57:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 11:57:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 11:57:33 symfony [info] {sfWebDebugLogger} Configuration 5.26 ms (9)
+Apr 21 11:57:33 symfony [info] {sfWebDebugLogger} Factories 15.46 ms (1)
+Apr 21 11:57:33 symfony [info] {sfWebDebugLogger} Action "job/index" 14.93 ms (1)
+Apr 21 11:57:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.41 ms (2)
+Apr 21 11:57:33 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 8.76 ms (1)
+Apr 21 11:57:33 symfony [info] {sfWebResponse} Send content (36935 o)
+Apr 21 11:58:58 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Apr 21 11:58:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 11:58:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 11:58:58 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 21 11:58:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 11:58:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j - ()
+Apr 21 11:58:58 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 21 11:58:58 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 11:58:58 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 11:58:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 11:58:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 11:58:58 symfony [info] {sfWebDebugLogger} Configuration 5.27 ms (9)
+Apr 21 11:58:58 symfony [info] {sfWebDebugLogger} Factories 15.71 ms (1)
+Apr 21 11:58:58 symfony [info] {sfWebDebugLogger} Action "job/index" 14.94 ms (1)
+Apr 21 11:58:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.32 ms (2)
+Apr 21 11:58:58 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 9.26 ms (1)
+Apr 21 11:58:58 symfony [info] {sfWebResponse} Send content (36967 o)
+Apr 21 12:00:26 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Apr 21 12:00:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:00:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:00:26 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 21 12:00:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:00:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j - ()
+Apr 21 12:00:26 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 21 12:00:26 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 12:00:26 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 12:00:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 12:00:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:00:26 symfony [info] {sfWebDebugLogger} Configuration 5.49 ms (9)
+Apr 21 12:00:26 symfony [info] {sfWebDebugLogger} Factories 15.16 ms (1)
+Apr 21 12:00:26 symfony [info] {sfWebDebugLogger} Action "job/index" 14.34 ms (1)
+Apr 21 12:00:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.51 ms (2)
+Apr 21 12:00:26 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 8.46 ms (1)
+Apr 21 12:00:26 symfony [info] {sfWebResponse} Send content (36976 o)
+Apr 21 12:06:45 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Apr 21 12:06:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:06:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:06:45 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 21 12:06:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:06:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j - ()
+Apr 21 12:06:45 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 21 12:06:45 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 12:06:45 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 12:06:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 12:06:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:06:45 symfony [info] {sfWebDebugLogger} Configuration 5.23 ms (9)
+Apr 21 12:06:45 symfony [info] {sfWebDebugLogger} Factories 15.11 ms (1)
+Apr 21 12:06:45 symfony [info] {sfWebDebugLogger} Action "job/index" 15.67 ms (1)
+Apr 21 12:06:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.52 ms (2)
+Apr 21 12:06:45 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 9.10 ms (1)
+Apr 21 12:06:45 symfony [info] {sfWebResponse} Send content (36953 o)
+Apr 21 12:09:00 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Apr 21 12:09:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:09:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:09:00 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 21 12:09:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:09:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j - ()
+Apr 21 12:09:00 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 21 12:09:00 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 12:09:00 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 12:09:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 12:09:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:09:00 symfony [info] {sfWebDebugLogger} Configuration 5.20 ms (9)
+Apr 21 12:09:00 symfony [info] {sfWebDebugLogger} Factories 15.07 ms (1)
+Apr 21 12:09:00 symfony [info] {sfWebDebugLogger} Action "job/index" 15.76 ms (1)
+Apr 21 12:09:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.42 ms (2)
+Apr 21 12:09:00 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 9.19 ms (1)
+Apr 21 12:09:00 symfony [info] {sfWebResponse} Send content (36954 o)
+Apr 21 12:12:06 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Apr 21 12:12:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:12:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:12:06 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 21 12:12:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:12:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j - ()
+Apr 21 12:12:06 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 21 12:12:06 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 12:12:06 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 12:12:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 12:12:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:12:06 symfony [info] {sfWebDebugLogger} Configuration 5.56 ms (9)
+Apr 21 12:12:06 symfony [info] {sfWebDebugLogger} Factories 15.36 ms (1)
+Apr 21 12:12:06 symfony [info] {sfWebDebugLogger} Action "job/index" 21.02 ms (1)
+Apr 21 12:12:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.61 ms (2)
+Apr 21 12:12:06 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 9.56 ms (1)
+Apr 21 12:12:06 symfony [info] {sfWebResponse} Send content (36977 o)
+Apr 21 12:20:31 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Apr 21 12:20:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:20:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:20:31 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 21 12:20:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:20:31 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j - ()
+Apr 21 12:20:31 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 21 12:20:31 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 12:20:31 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 12:20:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 12:20:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:20:31 symfony [info] {sfWebDebugLogger} Configuration 4.80 ms (9)
+Apr 21 12:20:31 symfony [info] {sfWebDebugLogger} Factories 14.93 ms (1)
+Apr 21 12:20:31 symfony [info] {sfWebDebugLogger} Action "job/index" 15.12 ms (1)
+Apr 21 12:20:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.46 ms (2)
+Apr 21 12:20:31 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 8.56 ms (1)
+Apr 21 12:20:31 symfony [info] {sfWebResponse} Send content (36970 o)
+Apr 21 12:20:44 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:20:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:20:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:20:44 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:20:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:20:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:20:44 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:20:44 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 12:20:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 12:20:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:20:44 symfony [info] {sfWebDebugLogger} Configuration 5.12 ms (9)
+Apr 21 12:20:44 symfony [info] {sfWebDebugLogger} Factories 15.36 ms (1)
+Apr 21 12:20:44 symfony [info] {sfWebDebugLogger} Action "job/show" 17.59 ms (1)
+Apr 21 12:20:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.43 ms (2)
+Apr 21 12:20:44 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 33.77 ms (1)
+Apr 21 12:23:32 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:23:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:23:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:23:32 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:23:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:23:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:23:32 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:23:32 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 12:23:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 12:23:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:23:32 symfony [info] {sfWebDebugLogger} Configuration 4.99 ms (9)
+Apr 21 12:23:32 symfony [info] {sfWebDebugLogger} Factories 15.84 ms (1)
+Apr 21 12:23:32 symfony [info] {sfWebDebugLogger} Action "job/show" 18.46 ms (1)
+Apr 21 12:23:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.63 ms (2)
+Apr 21 12:23:32 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 34.13 ms (1)
+Apr 21 12:25:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:25:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:25:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:25:13 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:25:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:25:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:25:13 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:25:13 symfony [notice] {sfWebDebugLogger}  Notice at C:\xampp\htdocs\jobeet\apps\frontend\modules\job\templates\showSuccess.php on line 6 (Undefined variable: job)
+Apr 21 12:25:32 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:25:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:25:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:25:32 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:25:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:25:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:25:32 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:25:32 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 12:25:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 12:25:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:25:32 symfony [info] {sfWebDebugLogger} Configuration 6.26 ms (9)
+Apr 21 12:25:32 symfony [info] {sfWebDebugLogger} Factories 15.31 ms (1)
+Apr 21 12:25:32 symfony [info] {sfWebDebugLogger} Action "job/show" 19.15 ms (1)
+Apr 21 12:25:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.47 ms (2)
+Apr 21 12:25:32 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 35.52 ms (1)
+Apr 21 12:26:16 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:26:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:26:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:26:16 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:26:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:26:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:26:16 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:26:16 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 12:26:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 12:26:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:26:16 symfony [info] {sfWebDebugLogger} Configuration 5.63 ms (9)
+Apr 21 12:26:16 symfony [info] {sfWebDebugLogger} Factories 15.07 ms (1)
+Apr 21 12:26:16 symfony [info] {sfWebDebugLogger} Action "job/show" 18.59 ms (1)
+Apr 21 12:26:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.52 ms (2)
+Apr 21 12:26:16 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 35.42 ms (1)
+Apr 21 12:26:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:26:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:26:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:26:39 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:26:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:26:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:26:39 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:26:39 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 12:26:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 12:26:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:26:39 symfony [info] {sfWebDebugLogger} Configuration 5.28 ms (9)
+Apr 21 12:26:39 symfony [info] {sfWebDebugLogger} Factories 15.39 ms (1)
+Apr 21 12:26:39 symfony [info] {sfWebDebugLogger} Action "job/show" 17.96 ms (1)
+Apr 21 12:26:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.39 ms (2)
+Apr 21 12:26:39 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 33.41 ms (1)
+Apr 21 12:27:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:27:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:27:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:27:51 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:28:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:28:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:28:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:28:31 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:28:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:28:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:28:31 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:28:31 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 12:28:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 12:28:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:28:31 symfony [info] {sfWebDebugLogger} Configuration 4.86 ms (9)
+Apr 21 12:28:31 symfony [info] {sfWebDebugLogger} Factories 14.61 ms (1)
+Apr 21 12:28:31 symfony [info] {sfWebDebugLogger} Action "job/show" 18.80 ms (1)
+Apr 21 12:28:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.40 ms (2)
+Apr 21 12:28:31 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 34.89 ms (1)
+Apr 21 12:32:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:32:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:32:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:32:50 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:32:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:32:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:32:50 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:32:50 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 12:32:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 12:32:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:32:50 symfony [info] {sfWebDebugLogger} Configuration 6.34 ms (9)
+Apr 21 12:32:50 symfony [info] {sfWebDebugLogger} Factories 14.88 ms (1)
+Apr 21 12:32:50 symfony [info] {sfWebDebugLogger} Action "job/show" 19.08 ms (1)
+Apr 21 12:32:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.42 ms (2)
+Apr 21 12:32:50 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 35.37 ms (1)
+Apr 21 12:34:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:34:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:34:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:34:55 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:34:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:34:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:34:55 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:34:55 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 12:34:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 12:34:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:34:55 symfony [info] {sfWebDebugLogger} Configuration 100.76 ms (9)
+Apr 21 12:34:55 symfony [info] {sfWebDebugLogger} Factories 67.24 ms (1)
+Apr 21 12:34:55 symfony [info] {sfWebDebugLogger} Action "job/show" 30.99 ms (1)
+Apr 21 12:34:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.62 ms (2)
+Apr 21 12:34:55 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 36.84 ms (1)
+Apr 21 12:38:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:38:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:38:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:38:41 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:38:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:38:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:38:41 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:38:41 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 12:38:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 12:38:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:38:41 symfony [info] {sfWebDebugLogger} Configuration 96.20 ms (9)
+Apr 21 12:38:41 symfony [info] {sfWebDebugLogger} Factories 60.67 ms (1)
+Apr 21 12:38:41 symfony [info] {sfWebDebugLogger} Action "job/show" 17.65 ms (1)
+Apr 21 12:38:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.65 ms (2)
+Apr 21 12:38:41 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 36.05 ms (1)
+Apr 21 12:38:48 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Apr 21 12:38:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:38:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:38:48 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 21 12:38:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:38:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j - ()
+Apr 21 12:38:48 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Apr 21 12:38:48 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 12:38:48 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 12:38:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 12:38:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:38:48 symfony [info] {sfWebDebugLogger} Configuration 4.91 ms (9)
+Apr 21 12:38:48 symfony [info] {sfWebDebugLogger} Factories 15.56 ms (1)
+Apr 21 12:38:48 symfony [info] {sfWebDebugLogger} Action "job/index" 30.51 ms (1)
+Apr 21 12:38:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.41 ms (2)
+Apr 21 12:38:48 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 10.13 ms (1)
+Apr 21 12:38:48 symfony [info] {sfWebResponse} Send content (36856 o)
+Apr 21 12:38:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:38:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:38:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:38:51 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:38:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:38:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:38:51 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:38:51 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 12:38:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 12:38:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:38:51 symfony [info] {sfWebDebugLogger} Configuration 4.82 ms (9)
+Apr 21 12:38:51 symfony [info] {sfWebDebugLogger} Factories 16.38 ms (1)
+Apr 21 12:38:51 symfony [info] {sfWebDebugLogger} Action "job/show" 37.85 ms (1)
+Apr 21 12:38:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.62 ms (2)
+Apr 21 12:38:51 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 36.13 ms (1)
+Apr 21 12:42:37 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:42:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:42:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:42:37 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:42:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:42:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:42:37 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:42:37 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 12:42:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 12:42:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:42:37 symfony [info] {sfWebDebugLogger} Configuration 98.15 ms (9)
+Apr 21 12:42:37 symfony [info] {sfWebDebugLogger} Factories 59.34 ms (1)
+Apr 21 12:42:37 symfony [info] {sfWebDebugLogger} Action "job/show" 30.33 ms (1)
+Apr 21 12:42:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.58 ms (2)
+Apr 21 12:42:37 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 36.03 ms (1)
+Apr 21 12:42:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:42:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:42:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:42:59 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:42:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:42:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:42:59 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:42:59 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown method JobeetJob::how_to_apply
+Apr 21 12:42:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 12:42:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:42:59 symfony [info] {sfWebDebugLogger} Configuration 5.11 ms (9)
+Apr 21 12:42:59 symfony [info] {sfWebDebugLogger} Factories 15.48 ms (1)
+Apr 21 12:42:59 symfony [info] {sfWebDebugLogger} Action "job/show" 23.35 ms (1)
+Apr 21 12:42:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.44 ms (2)
+Apr 21 12:42:59 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 30.17 ms (1)
+Apr 21 12:43:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:43:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:43:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:43:13 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:43:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:43:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:43:13 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:43:13 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 12:43:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 12:43:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:43:13 symfony [info] {sfWebDebugLogger} Configuration 6.15 ms (9)
+Apr 21 12:43:13 symfony [info] {sfWebDebugLogger} Factories 15.78 ms (1)
+Apr 21 12:43:13 symfony [info] {sfWebDebugLogger} Action "job/show" 25.88 ms (1)
+Apr 21 12:43:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.42 ms (2)
+Apr 21 12:43:13 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 36.54 ms (1)
+Apr 21 12:43:26 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:43:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:43:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:43:26 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:43:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:43:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:43:26 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:43:26 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "howtoapply" on "JobeetJob"
+Apr 21 12:43:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Apr 21 12:43:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:43:26 symfony [info] {sfWebDebugLogger} Configuration 6.48 ms (9)
+Apr 21 12:43:26 symfony [info] {sfWebDebugLogger} Factories 16.02 ms (1)
+Apr 21 12:43:26 symfony [info] {sfWebDebugLogger} Action "job/show" 34.73 ms (1)
+Apr 21 12:43:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.62 ms (2)
+Apr 21 12:43:26 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 38.07 ms (1)
+Apr 21 12:44:24 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Apr 21 12:44:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 12:44:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 12:44:24 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Apr 21 12:44:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 12:44:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.category_id AS j__category_id, j.type AS j__type, j.company AS j__company, j.logo AS j__logo, j.url AS j__url, j.position AS j__position, j.location AS j__location, j.description AS j__description, j.how_to_apply AS j__how_to_apply, j.token AS j__token, j.is_public AS j__is_public, j.is_activated AS j__is_activated, j.email AS j__email, j.expires_at AS j__expires_at, j.created_at AS j__created_at, j.updated_at AS j__updated_at FROM jobeet_job j WHERE (j.id = ?) LIMIT 1 - (1)
+Apr 21 12:44:24 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Apr 21 12:44:24 symfony [info] {main} Set slot "title"
+Apr 21 12:44:24 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 12:44:24 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\jobeet\apps\frontend\templates/layout.php"
+Apr 21 12:44:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 21 12:44:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 12:44:24 symfony [info] {sfWebDebugLogger} Configuration 6.55 ms (9)
+Apr 21 12:44:24 symfony [info] {sfWebDebugLogger} Factories 15.22 ms (1)
+Apr 21 12:44:24 symfony [info] {sfWebDebugLogger} Action "job/show" 46.06 ms (1)
+Apr 21 12:44:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.66 ms (2)
+Apr 21 12:44:24 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 13.46 ms (1)
+Apr 21 12:44:24 symfony [info] {sfWebResponse} Send content (38024 o)
