@@ -1,43 +1,49 @@
-<!-- apps/frontend/modules/job/templates/showSuccess.php -->
-<?php slot(
-  'title',
-  sprintf('%s is looking for a %s', $job->getCompany(), $job->getPosition()))
-?>
-<?php use_stylesheet('job.css') ?>
-<?php use_helper('Text') ?>
+<!-- apps/frontend/modules/category/templates/showSuccess.php -->
+<?php use_stylesheet('jobs.css') ?>
  
-<div id="job">
-  <h1><?php echo $job->getCompany() ?></h1>
-  <h2><?php echo $job->getLocation() ?></h2>
-  <h3>
-    <?php echo $job->getPosition() ?>
-    <small> - <?php echo $job->getType() ?></small>
-  </h3>
+<?php slot('title', sprintf('Jobs in the %s category', $category->getName())) ?>
  
-  <?php if ($job->getLogo()): ?>
-    <div class="logo">
-      <a href="<?php echo $job->getUrl() ?>">
-        <img src="/uploads/jobs/<?php echo $job->getLogo() ?>"
-          alt="<?php echo $job->getCompany() ?> logo" />
-      </a>
-    </div>
-  <?php endif ?>
- 
-  <div class="description">
-    <?php echo simple_format_text($job->getDescription()) ?>
+<div class="category">
+  <div class="feed">
+    <a href="">Feed</a>
   </div>
+  <h1><?php echo $category ?></h1>
+</div>
  
-  <h4>How to apply?</h4>
+<?php include_partial('job/list', array('jobs' => $pager->getResults())) ?>
  
-  <p class="how_to_apply"><?php /* echo $job->getHowToApply() */ ?></p>
+<?php if ($pager->haveToPaginate()): ?>
+  <div class="pagination">
+    <a href="<?php echo url_for('category', $category) ?>?page=1">
+      <img src="/legacy/images/first.png" alt="First page" title="First page" />
+    </a>
  
-  <div class="meta">
-    <small>posted on <?php echo $job->getDateTimeObject('created_at')->format('m/d/Y') ?></small>
-  </div>
+    <a href="<?php echo url_for('category', $category) ?>?page=<?php echo $pager->getPreviousPage() ?>">
+      <img src="/legacy/images/previous.png" alt="Previous page" title="Previous page" />
+    </a>
  
-  <div style="padding: 20px 0">
-    <a href="<?php echo url_for('job/edit?id='.$job->getId()) ?>">
-      Edit
+    <?php foreach ($pager->getLinks() as $page): ?>
+      <?php if ($page == $pager->getPage()): ?>
+        <?php echo $page ?>
+      <?php else: ?>
+        <a href="<?php echo url_for('category', $category) ?>?page=<?php echo $page ?>"><?php echo $page ?></a>
+      <?php endif; ?>
+    <?php endforeach; ?>
+ 
+    <a href="<?php echo url_for('category', $category) ?>?page=<?php echo $pager->getNextPage() ?>">
+      <img src="/legacy/images/next.png" alt="Next page" title="Next page" />
+    </a>
+ 
+    <a href="<?php echo url_for('category', $category) ?>?page=<?php echo $pager->getLastPage() ?>">
+      <img src="/legacy/images/last.png" alt="Last page" title="Last page" />
     </a>
   </div>
+<?php endif; ?>
+ 
+<div class="pagination_desc">
+  <strong><?php echo count($pager) ?></strong> jobs in this category
+ 
+  <?php if ($pager->haveToPaginate()): ?>
+    - page <strong><?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></strong>
+  <?php endif; ?>
 </div>

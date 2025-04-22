@@ -31,11 +31,9 @@ abstract class BaseJobeetCategoryAffiliate extends sfDoctrineRecord
         $this->setTableName('jobeet_category_affiliate');
         $this->hasColumn('category_id', 'integer', null, array(
              'type' => 'integer',
-             'primary' => true,
              ));
         $this->hasColumn('affiliate_id', 'integer', null, array(
              'type' => 'integer',
-             'primary' => true,
              ));
     }
 
@@ -45,11 +43,13 @@ abstract class BaseJobeetCategoryAffiliate extends sfDoctrineRecord
         $this->hasOne('JobeetCategory', array(
              'local' => 'category_id',
              'foreign' => 'id',
-             'onDelete' => 'CASCADE'));
+             'onDelete' => 'CASCADE',
+             'foreignKeyName' => 'category_affiliate_category_fk'));
 
         $this->hasOne('JobeetAffiliate', array(
              'local' => 'affiliate_id',
              'foreign' => 'id',
-             'onDelete' => 'CASCADE'));
+             'onDelete' => 'CASCADE',
+             'foreignKeyName' => 'category_affiliate_affiliate_fk'));
     }
 }

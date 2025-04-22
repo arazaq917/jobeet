@@ -126,7 +126,7 @@ abstract class BaseJobeetJob extends sfDoctrineRecord
              ));
         $this->hasColumn('expires_at', 'timestamp', null, array(
              'type' => 'timestamp',
-             'notnull' => true,
+             'notnull' => false,
              ));
     }
 

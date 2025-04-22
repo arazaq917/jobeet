@@ -1,8 +1,13 @@
 # config/doctrine/schema.yml
 JobeetCategory:
-  actAs: { Timestampable: ~ }
+  actAs:
+    Timestampable: ~
+    Sluggable:
+      fields: [name]
   columns:
-    name: { type: string(255), notnull: true, unique: true }
+    name:
+      type: string(255)
+      notnull:  true
  
 JobeetJob:
   actAs: { Timestampable: ~ }
@@ -20,7 +25,7 @@ JobeetJob:
     is_public:    { type: boolean, notnull: true, default: 1 }
     is_activated: { type: boolean, notnull: true, default: 0 }
     email:        { type: string(255), notnull: true }
-    expires_at:   { type: timestamp, notnull: true }
+    expires_at:   { type: timestamp, notnull: false }
   relations:
     JobeetCategory: { onDelete: CASCADE, local: category_id, foreign: id, foreignAlias: JobeetJobs } 
  
@@ -40,9 +45,22 @@ JobeetAffiliate:
       foreignAlias: JobeetAffiliates
  
 JobeetCategoryAffiliate:
+  actAs: []
   columns:
-    category_id:  { type: integer, primary: true }
-    affiliate_id: { type: integer, primary: true }
+    category_id: { type: integer }
+    affiliate_id: { type: integer }
   relations:
-    JobeetCategory:  { onDelete: CASCADE, local: category_id, foreign: id }
-    JobeetAffiliate: { onDelete: CASCADE, local: affiliate_id, foreign: id }
+    JobeetCategory:
+      class: JobeetCategory
+      local: category_id
+      foreign: id
+      foreignAlias: CategoryAffiliates
+      onDelete: CASCADE
+      foreignKeyName: category_affiliate_category_fk
+    JobeetAffiliate:
+      class: JobeetAffiliate
+      local: affiliate_id
+      foreign: id
+      foreignAlias: CategoryAffiliates
+      onDelete: CASCADE
+      foreignKeyName: category_affiliate_affiliate_fk

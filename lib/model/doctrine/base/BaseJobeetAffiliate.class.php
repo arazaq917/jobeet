@@ -10,20 +10,20 @@
  * @property string $token
  * @property boolean $is_active
  * @property Doctrine_Collection $JobeetCategories
- * @property Doctrine_Collection $JobeetCategoryAffiliate
+ * @property Doctrine_Collection $CategoryAffiliates
  * 
- * @method string              geturl()                     Returns the current record's "url" value
- * @method string              getemail()                   Returns the current record's "email" value
- * @method string              gettoken()                   Returns the current record's "token" value
- * @method boolean             getis_active()               Returns the current record's "is_active" value
- * @method Doctrine_Collection getJobeetCategories()        Returns the current record's "JobeetCategories" collection
- * @method Doctrine_Collection getJobeetCategoryAffiliate() Returns the current record's "JobeetCategoryAffiliate" collection
- * @method JobeetAffiliate     seturl()                     Sets the current record's "url" value
- * @method JobeetAffiliate     setemail()                   Sets the current record's "email" value
- * @method JobeetAffiliate     settoken()                   Sets the current record's "token" value
- * @method JobeetAffiliate     setis_active()               Sets the current record's "is_active" value
- * @method JobeetAffiliate     setJobeetCategories()        Sets the current record's "JobeetCategories" collection
- * @method JobeetAffiliate     setJobeetCategoryAffiliate() Sets the current record's "JobeetCategoryAffiliate" collection
+ * @method string              geturl()                Returns the current record's "url" value
+ * @method string              getemail()              Returns the current record's "email" value
+ * @method string              gettoken()              Returns the current record's "token" value
+ * @method boolean             getis_active()          Returns the current record's "is_active" value
+ * @method Doctrine_Collection getJobeetCategories()   Returns the current record's "JobeetCategories" collection
+ * @method Doctrine_Collection getCategoryAffiliates() Returns the current record's "CategoryAffiliates" collection
+ * @method JobeetAffiliate     seturl()                Sets the current record's "url" value
+ * @method JobeetAffiliate     setemail()              Sets the current record's "email" value
+ * @method JobeetAffiliate     settoken()              Sets the current record's "token" value
+ * @method JobeetAffiliate     setis_active()          Sets the current record's "is_active" value
+ * @method JobeetAffiliate     setJobeetCategories()   Sets the current record's "JobeetCategories" collection
+ * @method JobeetAffiliate     setCategoryAffiliates() Sets the current record's "CategoryAffiliates" collection
  * 
  * @package    jobeet
  * @subpackage model
@@ -66,7 +66,7 @@ abstract class BaseJobeetAffiliate extends sfDoctrineRecord
              'local' => 'affiliate_id',
              'foreign' => 'category_id'));
 
-        $this->hasMany('JobeetCategoryAffiliate', array(
+        $this->hasMany('JobeetCategoryAffiliate as CategoryAffiliates', array(
              'local' => 'id',
              'foreign' => 'affiliate_id'));
 

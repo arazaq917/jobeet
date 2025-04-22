@@ -12,15 +12,20 @@ class jobActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-    $this->jobeet_jobs = Doctrine::getTable('JobeetJob')
-      ->createQuery('a')
-      ->execute();
+    $this->categories = Doctrine_Core::getTable('JobeetCategory')->getWithJobs();
   }
 
   public function executeShow(sfWebRequest $request)
   {
-    $this->job = Doctrine::getTable('JobeetJob')-> find($request->getParameter('id'));
-    $this->forward404Unless($this->job);
+    $this->category = $this->getRoute()->getObject();
+   
+    $this->pager = new sfDoctrinePager(
+      'JobeetJob',
+      sfConfig::get('app_max_jobs_on_category')
+    );
+    $this->pager->setQuery($this->category->getActiveJobsQuery());
+    $this->pager->setPage($request->getParameter('page', 1));
+    $this->pager->init();
   }
 
   public function executeNew(sfWebRequest $request)

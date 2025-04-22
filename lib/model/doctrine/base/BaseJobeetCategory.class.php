@@ -8,16 +8,16 @@
  * @property string $name
  * @property Doctrine_Collection $JobeetJobs
  * @property Doctrine_Collection $JobeetAffiliates
- * @property Doctrine_Collection $JobeetCategoryAffiliate
+ * @property Doctrine_Collection $CategoryAffiliates
  * 
- * @method string              getname()                    Returns the current record's "name" value
- * @method Doctrine_Collection getJobeetJobs()              Returns the current record's "JobeetJobs" collection
- * @method Doctrine_Collection getJobeetAffiliates()        Returns the current record's "JobeetAffiliates" collection
- * @method Doctrine_Collection getJobeetCategoryAffiliate() Returns the current record's "JobeetCategoryAffiliate" collection
- * @method JobeetCategory      setname()                    Sets the current record's "name" value
- * @method JobeetCategory      setJobeetJobs()              Sets the current record's "JobeetJobs" collection
- * @method JobeetCategory      setJobeetAffiliates()        Sets the current record's "JobeetAffiliates" collection
- * @method JobeetCategory      setJobeetCategoryAffiliate() Sets the current record's "JobeetCategoryAffiliate" collection
+ * @method string              getname()               Returns the current record's "name" value
+ * @method Doctrine_Collection getJobeetJobs()         Returns the current record's "JobeetJobs" collection
+ * @method Doctrine_Collection getJobeetAffiliates()   Returns the current record's "JobeetAffiliates" collection
+ * @method Doctrine_Collection getCategoryAffiliates() Returns the current record's "CategoryAffiliates" collection
+ * @method JobeetCategory      setname()               Sets the current record's "name" value
+ * @method JobeetCategory      setJobeetJobs()         Sets the current record's "JobeetJobs" collection
+ * @method JobeetCategory      setJobeetAffiliates()   Sets the current record's "JobeetAffiliates" collection
+ * @method JobeetCategory      setCategoryAffiliates() Sets the current record's "CategoryAffiliates" collection
  * 
  * @package    jobeet
  * @subpackage model
@@ -32,7 +32,6 @@ abstract class BaseJobeetCategory extends sfDoctrineRecord
         $this->hasColumn('name', 'string', 255, array(
              'type' => 'string',
              'notnull' => true,
-             'unique' => true,
              'length' => 255,
              ));
     }
@@ -49,11 +48,18 @@ abstract class BaseJobeetCategory extends sfDoctrineRecord
              'local' => 'category_id',
              'foreign' => 'affiliate_id'));
 
-        $this->hasMany('JobeetCategoryAffiliate', array(
+        $this->hasMany('JobeetCategoryAffiliate as CategoryAffiliates', array(
              'local' => 'id',
              'foreign' => 'category_id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
+        $sluggable0 = new Doctrine_Template_Sluggable(array(
+             'fields' => 
+             array(
+              0 => 'name',
+             ),
+             ));
         $this->actAs($timestampable0);
+        $this->actAs($sluggable0);
     }
 }

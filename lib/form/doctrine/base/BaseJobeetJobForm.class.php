@@ -49,7 +49,7 @@ abstract class BaseJobeetJobForm extends BaseFormDoctrine
       'is_public'    => new sfValidatorBoolean(array('required' => false)),
       'is_activated' => new sfValidatorBoolean(array('required' => false)),
       'email'        => new sfValidatorString(array('max_length' => 255)),
-      'expires_at'   => new sfValidatorDateTime(),
+      'expires_at'   => new sfValidatorDateTime(array('required' => false)),
       'created_at'   => new sfValidatorDateTime(),
       'updated_at'   => new sfValidatorDateTime(),
     ));

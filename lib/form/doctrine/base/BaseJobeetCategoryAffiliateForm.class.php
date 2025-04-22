@@ -15,13 +15,15 @@ abstract class BaseJobeetCategoryAffiliateForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'category_id'  => new sfWidgetFormInputHidden(),
-      'affiliate_id' => new sfWidgetFormInputHidden(),
+      'id'           => new sfWidgetFormInputHidden(),
+      'category_id'  => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('JobeetCategory'), 'add_empty' => true)),
+      'affiliate_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('JobeetAffiliate'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
-      'category_id'  => new sfValidatorChoice(array('choices' => array($this->getObject()->get('category_id')), 'empty_value' => $this->getObject()->get('category_id'), 'required' => false)),
-      'affiliate_id' => new sfValidatorChoice(array('choices' => array($this->getObject()->get('affiliate_id')), 'empty_value' => $this->getObject()->get('affiliate_id'), 'required' => false)),
+      'id'           => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
+      'category_id'  => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('JobeetCategory'), 'required' => false)),
+      'affiliate_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('JobeetAffiliate'), 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('jobeet_category_affiliate[%s]');
