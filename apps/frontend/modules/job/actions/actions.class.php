@@ -17,15 +17,9 @@ class jobActions extends sfActions
 
   public function executeShow(sfWebRequest $request)
   {
-    $this->category = $this->getRoute()->getObject();
-   
-    $this->pager = new sfDoctrinePager(
-      'JobeetJob',
-      sfConfig::get('app_max_jobs_on_category')
-    );
-    $this->pager->setQuery($this->category->getActiveJobsQuery());
-    $this->pager->setPage($request->getParameter('page', 1));
-    $this->pager->init();
+    $this->job = $this->getRoute()->getObject();
+ 
+    $this->getUser()->addJobToHistory($this->job);
   }
 
   public function executeNew(sfWebRequest $request)
@@ -81,4 +75,17 @@ class jobActions extends sfActions
       $this->redirect('job/edit?id='.$jobeetjob->getid());
     }
   }
+
+  public function executeExtend(sfWebRequest $request)
+  {
+    $request->checkCSRFProtection();
+   
+    $job = $this->getRoute()->getObject();
+    $this->forward404Unless($job->extend());
+   
+    $this->getUser()->setFlash('notice', sprintf('Your job validity has been extended until %s.', $job->getDateTimeObject('expires_at')->format('m/d/Y')));
+   
+    $this->redirect($this->generateUrl('job_show_user', $job));
+  }
+
 }

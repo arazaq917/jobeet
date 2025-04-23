@@ -23,7 +23,11 @@ test:
     etag:                   false
 
 all:
+  .actions:
+    login_module:    sfGuardAuth
+    login_action:    signin
   .settings:
+    enabled_modules: [default, sfGuardAuth, sfGuardUser]
     # Form security secret (CSRF protection)
     csrf_secret:            e6a5286ab4af98feb1c8dd18256e6eb32c274a7b
 
